@@ -10,4 +10,10 @@ $.ajax({
 // promise resolve
   .then(function(response) {
       console.log(response);
+
+    
+     var search = response.docs;
+     var ratingDisplay = $("<div>").append( search);
+     $("#searchTerm").append(ratingDisplay);
+
   })
